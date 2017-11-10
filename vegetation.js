@@ -34,7 +34,8 @@ var freshwater_lake = {
     "Shape_area":82832.94922,
     "Shape_len":5111.10535,
     "National_":"Freshwater Lake",
-    "Subtype":"Wetlands"
+    "Subtype":"Wetlands",
+    "color": "4372A0",
   },
   
 };
@@ -99,6 +100,7 @@ var cape_estuarine_salt_marshes = {
 };
 var swartland_alluvium_fynbos = {
   "type":"Feature",
+
   "geometry": {
     "type":"Polygon",
     "coordinates":[
@@ -158,6 +160,8 @@ var swartland_alluvium_fynbos = {
 };
 var southern_afrotemperate_forest = {
   "type":"Feature",
+
+
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -549,6 +553,7 @@ var southern_afrotemperate_forest = {
 };
 var cape_flats_sand_fynbos = {
   "type":"Feature",
+
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -2343,6 +2348,7 @@ var cape_flats_sand_fynbos = {
 };
 var atlantis_sand_fynbos = {
   "type":"Feature",
+
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -10919,7 +10925,7 @@ var peninsula_shale_renosterveld = {
     "Subtype":"on Shale"
   }
 };
-var peninsula_franite_fynbos_north = {
+var peninsula_granite_fynbos_north = {
   "type":"Feature",
   "geometry": {
     "type":"MultiPolygon",
