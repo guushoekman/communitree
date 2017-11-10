@@ -1,0 +1,8 @@
+
+- As Paul and Fran, I want to be able to have insight and a browsable tool to see what vegetation type occurs where
+- As a greener, I'd like to know what to plant near my home
+- As a greener, I'd like to see what a vegetation type looks like
+- As a greener, I'd like to know what plants belong in this vegetation type
+- As a greener, I'd like to know where to get these plants
+- As a greener, I'd like to know more about each plant
+- As a greener, I'd like to know where other greeners and greening organisations are in my area
