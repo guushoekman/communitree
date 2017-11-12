@@ -27,6 +27,7 @@
   <div id='map'></div>
 
   <script src="vegetation.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <script>
     var map = L.map('map', {
@@ -49,52 +50,54 @@
       var popupContent = feature.properties.National_ + "<a href='https://communitree.in/cape-town/vegetation/" + feature.properties.slug + "'>Read more</a>";
       var color = feature.properties.color;
       layer.bindPopup(popupContent);
-    }
+    };
 
     L.geoJSON([freshwater_lake, cape_estuarine_salt_marshes, swartland_alluvium_fynbos, southern_afrotemperate_forest, cape_flats_sand_fynbos, atlantis_sand_fynbos, beach, boland_granite_fynbos, cape_flats_dune_strandveld_false_bay, cape_flats_dune_strandveld_west_coast, cape_lowland_freshwater_wetlands, cape_winelands_shale_fynbos, peninsula_sandstone_fynbos, hangklip_sand_fynbos, kogelberg_sandstone_fynbos, peninsula_shale_fynbos, swartland_granite_renosterveld, swartland_shale_renosterveld, swartland_silcrete_renosterveld, reclaimed, peninsula_shale_renosterveld, peninsula_granite_fynbos_north, lourensford_alluvium_fynbos, western_coastal_shale_band_vegetation, elgin_shale_fynbos], {
 
       onEachFeature: onEachFeature,
 
+
+
       style: function(feature) {
         switch (feature.properties.National_) {
           // water or water related
-          case "Freshwater Lake": return {stroke: false, fillColor: "#1414c8", fillOpacity: 0.4};
-          case "Cape Estuarine Salt Marshes": return {stroke: false, fillColor: "#1414c8", fillOpacity: 0.4};
-          case "Cape Lowland Freshwater Wetlands": return {stroke: false, fillColor: "#1414c8", fillOpacity: 0.4};
+          case "Freshwater Lake": return {color: "#f4f4f4", weight: 0.2, fillColor: "#1414c8", fillOpacity: 0.4};
+          case "Cape Estuarine Salt Marshes": return {color: "#f4f4f4", weight: 0.2, fillColor: "#1414c8", fillOpacity: 0.4};
+          case "Cape Lowland Freshwater Wetlands": return {color: "#f4f4f4", weight: 0.2, fillColor: "#1414c8", fillOpacity: 0.4};
 
           // fynbos
-          case "Swartland Alluvium Fynbos": return {stroke: false, fillColor: "#bcbddc", fillOpacity: 0.4};
-          case "Lourensford Alluvium Fynbos": return {stroke: false, fillColor: "#bcbddc", fillOpacity: 0.4};
+          case "Swartland Alluvium Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#bcbddc", fillOpacity: 0.4};
+          case "Lourensford Alluvium Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#bcbddc", fillOpacity: 0.4};
           
-          case "Peninsula Granite Fynbos - North": return {stroke: false, fillColor: "#9e9ac8", fillOpacity: 0.4};
-          case "Boland Granite Fynbos": return {stroke: false, fillColor: "#9e9ac8", fillOpacity: 0.4};
+          case "Peninsula Granite Fynbos - North": return {color: "#f4f4f4", weight: 0.2, fillColor: "#9e9ac8", fillOpacity: 0.4};
+          case "Boland Granite Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#9e9ac8", fillOpacity: 0.4};
           
-          case "Cape Flats Sand Fynbos": return {stroke: false, fillColor: "#807dba", fillOpacity: 0.4};
-          case "Hangklip Sand Fynbos": return {stroke: false, fillColor: "#807dba", fillOpacity: 0.4};
-          case "Atlantis Sand Fynbos": return {stroke: false, fillColor: "#807dba", fillOpacity: 0.4};
+          case "Cape Flats Sand Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#807dba", fillOpacity: 0.4};
+          case "Hangklip Sand Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#807dba", fillOpacity: 0.4};
+          case "Atlantis Sand Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#807dba", fillOpacity: 0.4};
           
-          case "Kogelberg Sandstone Fynbos": return {stroke: false, fillColor: "#6a51a3", fillOpacity: 0.4};
-          case "Peninsula Sandstone Fynbos": return {stroke: false, fillColor: "#6a51a3", fillOpacity: 0.4};
+          case "Kogelberg Sandstone Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#6a51a3", fillOpacity: 0.4};
+          case "Peninsula Sandstone Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#6a51a3", fillOpacity: 0.4};
 
-          case "Cape Winelands Shale Fynbos": return {stroke: false, fillColor: "#4a1486", fillOpacity: 0.4};
-          case "Peninsula Shale Fynbos": return {stroke: false, fillColor: "#4a1486", fillOpacity: 0.4};
-          case "Elgin Shale Fynbos": return {stroke: false, fillColor: "#4a1486", fillOpacity: 0.4};
+          case "Cape Winelands Shale Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#4a1486", fillOpacity: 0.4};
+          case "Peninsula Shale Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#4a1486", fillOpacity: 0.4};
+          case "Elgin Shale Fynbos": return {color: "#f4f4f4", weight: 0.2, fillColor: "#4a1486", fillOpacity: 0.4};
 
           // strandveld
-          case "Cape Flats Dune Strandveld - False Bay": return {stroke: false, fillColor: "#c8c814", fillOpacity: 0.4};
-          case "Cape Flats Dune Strandveld - West Coast": return {stroke: false, fillColor: "#c8c814", fillOpacity: 0.4};
+          case "Cape Flats Dune Strandveld - False Bay": return {color: "#f4f4f4", weight: 0.2, fillColor: "#c8c814", fillOpacity: 0.4};
+          case "Cape Flats Dune Strandveld - West Coast": return {color: "#f4f4f4", weight: 0.2, fillColor: "#c8c814", fillOpacity: 0.4};
 
           // renosterveld
-          case "Swartland Granite Renosterveld": return {stroke: false, fillColor: "#a1d99b", fillOpacity: 0.4};
-          case "Swartland Silcrete Renosterveld": return {stroke: false, fillColor: "#31a354", fillOpacity: 0.4};
-          case "Swartland Shale Renosterveld": return {stroke: false, fillColor: "#74c476", fillOpacity: 0.4};
-          case "Peninsula Shale Renosterveld": return {stroke: false, fillColor: "#006d2c", fillOpacity: 0.4};
+          case "Swartland Granite Renosterveld": return {color: "#f4f4f4", weight: 0.2, fillColor: "#a1d99b", fillOpacity: 0.4};
+          case "Swartland Silcrete Renosterveld": return {color: "#f4f4f4", weight: 0.2, fillColor: "#31a354", fillOpacity: 0.4};
+          case "Swartland Shale Renosterveld": return {color: "#f4f4f4", weight: 0.2, fillColor: "#74c476", fillOpacity: 0.4};
+          case "Peninsula Shale Renosterveld": return {color: "#f4f4f4", weight: 0.2, fillColor: "#006d2c", fillOpacity: 0.4};
 
           // others
-          case "Western Coastal Shale Band Vegetation": return {stroke: false, fillColor: "#fa0000", fillOpacity: 0.4};
-          case "Southern Afrotemperate Forest": return {stroke: false, fillColor: "#7f2704", fillOpacity: 0.4};
-          case "Beach": return {stroke: false, fillColor: "#d6ab11", fillOpacity: 0.4};
-          case "RECLAIMED": return {stroke: false, fillColor: "#000", fillOpacity: 0.4};
+          case "Western Coastal Shale Band Vegetation": return {color: "#f4f4f4", weight: 0.2, fillColor: "#fa0000", fillOpacity: 0.4};
+          case "Southern Afrotemperate Forest": return {color: "#f4f4f4", weight: 0.2, fillColor: "#7f2704", fillOpacity: 0.4};
+          case "Beach": return {color: "#f4f4f4", weight: 0.2, fillColor: "#d6ab11", fillOpacity: 0.4};
+          case "RECLAIMED": return {color: "#f4f4f4", weight: 0.2, fillColor: "#000", fillOpacity: 0.4};
           
         }
       }
