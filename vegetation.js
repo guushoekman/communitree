@@ -36,6 +36,7 @@ var freshwater_lake = {
     "National_":"Freshwater Lake",
     "Subtype":"Wetlands",
     "color": "4372A0",
+    "slug": "freshwater-lake",
   },
   
 };
@@ -95,7 +96,8 @@ var cape_estuarine_salt_marshes = {
     "Shape_area":21182.97381,
     "Shape_len":15598.17151,
     "National_":"Cape Estuarine Salt Marshes",
-    "Subtype":"Wetlands"
+    "Subtype":"Wetlands",
+    "slug": "cape-estuarine-salt-marshes",
   }
 };
 var swartland_alluvium_fynbos = {
@@ -155,13 +157,12 @@ var swartland_alluvium_fynbos = {
     "Shape_area":17341.2241,
     "Shape_len":25014.03603,
     "National_":"Swartland Alluvium Fynbos",
-    "Subtype":"on Malmesbury Sandstone"
+    "Subtype":"on Malmesbury Sandstone",
+    "slug": "swartland-alluvium-fynbos",
   }
 };
 var southern_afrotemperate_forest = {
   "type":"Feature",
-
-
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -548,12 +549,12 @@ var southern_afrotemperate_forest = {
     "Shape_area":3920.04665,
     "Shape_len":260.96485,
     "National_":"Southern Afrotemperate Forest",
-    "Subtype":"on Granite"
+    "Subtype":"on Granite",
+    "slug": "southern-afrotemperate-forest",
   }
 };
 var cape_flats_sand_fynbos = {
   "type":"Feature",
-
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -2343,12 +2344,12 @@ var cape_flats_sand_fynbos = {
     "Shape_area":93023.43061,
     "Shape_len":1120.61033,
     "National_":"Cape Flats Sand Fynbos",
-    "Subtype":"on marine-derived acid sands"
+    "Subtype":"on marine-derived acid sands",
+    "slug": "cape-flats-sand-fynbos",
   }
 };
 var atlantis_sand_fynbos = {
   "type":"Feature",
-
   "geometry": {
     "type":"MultiPolygon",
     "coordinates":[
@@ -2834,7 +2835,8 @@ var atlantis_sand_fynbos = {
     "Shape_area":21437.75389,
     "Shape_len":609.58924,
     "National_":"Atlantis Sand Fynbos",
-    "Subtype":"on marine-derived acid sands"
+    "Subtype":"on marine-derived acid sands",
+    "slug": "atlantis-sand-fynbos",
   }
 };
 var beach = {
@@ -3253,7 +3255,8 @@ var beach = {
     "Shape_area":1435.36536,
     "Shape_len":270.62297,
     "National_":"Beach",
-    "Subtype":"BEACH"
+    "Subtype":"BEACH",
+    "slug": "beach",
   }
 };
 var boland_granite_fynbos = {
@@ -3745,7 +3748,8 @@ var boland_granite_fynbos = {
     "Shape_area":19338.71128,
     "Shape_len":1600.13160,
     "National_":"Boland Granite Fynbos",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "boland-granite-fynbos",
   }
 };
 var cape_flats_dune_strandveld_false_bay = {
@@ -4686,7 +4690,8 @@ var cape_flats_dune_strandveld_false_bay = {
     "Shape_area":12690.94629,
     "Shape_len":1637.44125,
     "National_":"Cape Flats Dune Strandveld - False Bay",
-    "Subtype":"on sands"
+    "Subtype":"on sands",
+    "slug": "cape-flats-dune-strandveld-false-bay",
   }
 };
 var cape_flats_dune_strandveld_west_coast = {
@@ -5137,7 +5142,8 @@ var cape_flats_dune_strandveld_west_coast = {
     "Shape_area":2194.06916,
     "Shape_len":449.20077,
     "National_":"Cape Flats Dune Strandveld - West Coast",
-    "Subtype":"on sands"
+    "Subtype":"on sands",
+    "slug": "cape-flats-dune-strandveld-west-coast",
   }
 };
 var cape_lowland_freshwater_wetlands = {
@@ -5557,7 +5563,8 @@ var cape_lowland_freshwater_wetlands = {
     "Shape_area":4701.09743,
     "Shape_len":275.22126,
     "National_":"Cape Lowland Freshwater Wetlands",
-    "Subtype":"Wetlands"
+    "Subtype":"Wetlands",
+    "slug": "cape-lowland-freshwater-wetlands",
   }
 };
 var cape_winelands_shale_fynbos = {
@@ -5833,7 +5840,8 @@ var cape_winelands_shale_fynbos = {
     "Shape_area":4594.64834,
     "Shape_len":300.80430,
     "National_":"Cape Winelands Shale Fynbos",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "cape-winelands-shale-fynbos",
   }
 };
 var peninsula_sandstone_fynbos = {
@@ -6747,7 +6755,8 @@ var peninsula_sandstone_fynbos = {
     "Shape_area":24021.18926,
     "Shape_len":758.66751,
     "National_":"Peninsula Sandstone Fynbos",
-    "Subtype":"on Mudstone"
+    "Subtype":"on Mudstone",
+    "slug": "peninsula-sandstone-fynbos",
   }
 };
 var hangklip_sand_fynbos = {
@@ -7217,7 +7226,8 @@ var hangklip_sand_fynbos = {
     "Shape_area":10273.34100,
     "Shape_len":1338.57008,
     "National_":"Hangklip Sand Fynbos",
-    "Subtype":"on sands"
+    "Subtype":"on sands",
+    "slug": "hangklip-sand-fynbos",
   }
 };
 var kogelberg_sandstone_fynbos = {
@@ -7651,7 +7661,8 @@ var kogelberg_sandstone_fynbos = {
     "Shape_area":236.32497,
     "Shape_len":162.48096,
     "National_":"Kogelberg Sandstone Fynbos",
-    "Subtype":"on Sandstone"
+    "Subtype":"on Sandstone",
+    "slug": "kogelberg-sandstone-fynbos",
   }
 };
 var peninsula_shale_fynbos = {
@@ -7779,7 +7790,8 @@ var peninsula_shale_fynbos = {
     "Shape_area":1825.04162,
     "Shape_len":219.78061,
     "National_":"Peninsula Shale Fynbos",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "peninsula-shale-fynbos",
   }
 };
 var swartland_granite_renosterveld = {
@@ -8393,7 +8405,8 @@ var swartland_granite_renosterveld = {
     "Shape_area":12085.26774,
     "Shape_len":1908.36343,
     "National_":"Swartland Granite Renosterveld",
-    "Subtype":"on Granite"
+    "Subtype":"on Granite",
+    "slug": "swartland-granite-renosterveld",
   }
 };
 var swartland_shale_renosterveld = {
@@ -10140,7 +10153,8 @@ var swartland_shale_renosterveld = {
     "Shape_area":69953.11347,
     "Shape_len":1016.53846,
     "National_":"Swartland Shale Renosterveld",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "swartland-shale-renosterveld",
   }
 };
 var swartland_silcrete_renosterveld = {
@@ -10538,7 +10552,8 @@ var swartland_silcrete_renosterveld = {
     "Shape_area":12426.07743,
     "Shape_len":1439.67457,
     "National_":"Swartland Silcrete Renosterveld",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "swartland-silcrete-renosterveld",
   }
 };
 var reclaimed = {
@@ -10749,7 +10764,8 @@ var reclaimed = {
     "Shape_area":86.87164,
     "Shape_len":39.35166,
     "National_":"RECLAIMED",
-    "Subtype":"RECLAIMED"
+    "Subtype":"RECLAIMED",
+    "slug": "reclaimed",
   }
 };
 var peninsula_shale_renosterveld = {
@@ -10922,7 +10938,8 @@ var peninsula_shale_renosterveld = {
     "Shape_area":12407.73206,
     "Shape_len":1784.39109,
     "National_":"Peninsula Shale Renosterveld",
-    "Subtype":"on Shale"
+    "Subtype":"on Shale",
+    "slug": "peninsula-shale-renosterveld",
   }
 };
 var peninsula_granite_fynbos_north = {
@@ -11845,7 +11862,8 @@ var peninsula_granite_fynbos_north = {
     "Shape_area":13174.03965,
     "Shape_len":2146.65394,
     "National_":"Peninsula Granite Fynbos - North",
-    "Subtype":"on Granite"
+    "Subtype":"on Granite",
+    "slug": "peninsula-granite-fynbos-north",
   }
 };
 var lourensford_alluvium_fynbos = {
@@ -12050,7 +12068,8 @@ var lourensford_alluvium_fynbos = {
     "Shape_area":14959.023,
     "Shape_len":18184.93567,
     "National_":"Lourensford Alluvium Fynbos",
-    "Subtype":"on recent non-aeolian colluvium"
+    "Subtype":"on recent non-aeolian colluvium",
+    "slug": "lourensford-alluvium-fynbos",
   }
 };
 var western_coastal_shale_band_vegetation = {
@@ -12151,7 +12170,8 @@ var western_coastal_shale_band_vegetation = {
     "Shape_area":12497.90323,
     "Shape_len":17079.47477,
     "National_":"Western Coastal Shale Band Vegetation",
-    "Subtype":"on Cedarberg Shale Band"
+    "Subtype":"on Cedarberg Shale Band",
+    "slug": "western-coastal-shale-band-vegetation",
   }
 };
 var elgin_shale_fynbos = {
@@ -12220,6 +12240,7 @@ var elgin_shale_fynbos = {
     "Shape_area":12416.92746,
     "Shape_len":1637.30631,
     "National_":"Elgin Shale Fynbos",
-    "Subtype":"on Shale"
+    "Subtype":"on Shale",
+    "slug": "western-coastal-shale-band-vegetation",
   }
 };
